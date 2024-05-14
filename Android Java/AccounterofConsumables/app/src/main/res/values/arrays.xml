@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <string-array name="consumable_types">
+        <item android:id = "@+id/dropdownItem1"></item>
+        <item android:id = "@+id/dropdownItem2">Зубная щётка</item>
+        <item android:id = "@+id/dropdownItem3">Линзы</item>
+        <item android:id = "@+id/dropdownItem4">Фильтр для воды</item>
+    </string-array>
+</resources>
