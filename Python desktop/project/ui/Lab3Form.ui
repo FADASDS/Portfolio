@@ -1,0 +1,1326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>630</width>
+    <height>665</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout_8">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Метод умножения матриц</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="0" column="1" rowspan="6">
+    <layout class="QVBoxLayout" name="verticalLayout_5" stretch="0,0,0">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetNoConstraint</enum>
+     </property>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_6">
+       <item>
+        <widget class="QLabel" name="label_5">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Введите текст</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTextEdit" name="sourceTxtEdit">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="sizeAdjustPolicy">
+          <enum>QAbstractScrollArea::AdjustToContents</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <property name="sizeConstraint">
+          <enum>QLayout::SetMinimumSize</enum>
+         </property>
+         <item>
+          <spacer name="horizontalSpacer_5">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnEncode">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Зашифровать</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_6">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_7">
+       <item>
+        <widget class="QLabel" name="label_6">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Результат</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTextEdit" name="encodedTxtEdit">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="sizeAdjustPolicy">
+          <enum>QAbstractScrollArea::AdjustToContents</enum>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <item>
+          <spacer name="horizontalSpacer_7">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnDecode">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Расшифровать</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_8">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_8">
+       <item>
+        <widget class="QLabel" name="label_7">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Исходный текст</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTextEdit" name="decodedTxtEdit">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="sizeAdjustPolicy">
+          <enum>QAbstractScrollArea::AdjustToContents</enum>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="0">
+    <widget class="QTableWidget" name="tableWidget">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>55</height>
+      </size>
+     </property>
+     <property name="sizeAdjustPolicy">
+      <enum>QAbstractScrollArea::AdjustToContents</enum>
+     </property>
+     <attribute name="horizontalHeaderDefaultSectionSize">
+      <number>29</number>
+     </attribute>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string>А</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Б</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>В</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Г</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Д</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Е</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Ё</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Ж</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>З</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>И</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Й</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>К</string>
+      </property>
+     </column>
+     <item row="0" column="0">
+      <property name="text">
+       <string>1</string>
+      </property>
+     </item>
+     <item row="0" column="1">
+      <property name="text">
+       <string>2</string>
+      </property>
+     </item>
+     <item row="0" column="2">
+      <property name="text">
+       <string>3</string>
+      </property>
+     </item>
+     <item row="0" column="3">
+      <property name="text">
+       <string>4</string>
+      </property>
+     </item>
+     <item row="0" column="4">
+      <property name="text">
+       <string>5</string>
+      </property>
+     </item>
+     <item row="0" column="5">
+      <property name="text">
+       <string>6</string>
+      </property>
+     </item>
+     <item row="0" column="6">
+      <property name="text">
+       <string>7</string>
+      </property>
+     </item>
+     <item row="0" column="7">
+      <property name="text">
+       <string>8</string>
+      </property>
+     </item>
+     <item row="0" column="8">
+      <property name="text">
+       <string>9</string>
+      </property>
+     </item>
+     <item row="0" column="9">
+      <property name="text">
+       <string>10</string>
+      </property>
+     </item>
+     <item row="0" column="10">
+      <property name="text">
+       <string>11</string>
+      </property>
+     </item>
+     <item row="0" column="11">
+      <property name="text">
+       <string>12</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QTableWidget" name="tableWidget_3">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>55</height>
+      </size>
+     </property>
+     <property name="sizeAdjustPolicy">
+      <enum>QAbstractScrollArea::AdjustToContents</enum>
+     </property>
+     <attribute name="horizontalHeaderDefaultSectionSize">
+      <number>29</number>
+     </attribute>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string>Л</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>М</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Н</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>О</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>П</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Р</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>С</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Т</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>У</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Ф</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Х</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Ц</string>
+      </property>
+     </column>
+     <item row="0" column="0">
+      <property name="text">
+       <string>13</string>
+      </property>
+     </item>
+     <item row="0" column="1">
+      <property name="text">
+       <string>14</string>
+      </property>
+     </item>
+     <item row="0" column="2">
+      <property name="text">
+       <string>15</string>
+      </property>
+     </item>
+     <item row="0" column="3">
+      <property name="text">
+       <string>16</string>
+      </property>
+     </item>
+     <item row="0" column="4">
+      <property name="text">
+       <string>17</string>
+      </property>
+     </item>
+     <item row="0" column="5">
+      <property name="text">
+       <string>18</string>
+      </property>
+     </item>
+     <item row="0" column="6">
+      <property name="text">
+       <string>19</string>
+      </property>
+     </item>
+     <item row="0" column="7">
+      <property name="text">
+       <string>20</string>
+      </property>
+     </item>
+     <item row="0" column="8">
+      <property name="text">
+       <string>21</string>
+      </property>
+     </item>
+     <item row="0" column="9">
+      <property name="text">
+       <string>22</string>
+      </property>
+     </item>
+     <item row="0" column="10">
+      <property name="text">
+       <string>23</string>
+      </property>
+     </item>
+     <item row="0" column="11">
+      <property name="text">
+       <string>24</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <widget class="QTableWidget" name="tableWidget_5">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>55</height>
+      </size>
+     </property>
+     <property name="sizeAdjustPolicy">
+      <enum>QAbstractScrollArea::AdjustToContents</enum>
+     </property>
+     <attribute name="horizontalHeaderDefaultSectionSize">
+      <number>29</number>
+     </attribute>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string>г</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>д</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>е</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>ё</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>ж</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>з</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>и</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>й</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>к</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>л</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>м</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>н</string>
+      </property>
+     </column>
+     <item row="0" column="0">
+      <property name="text">
+       <string>37</string>
+      </property>
+     </item>
+     <item row="0" column="1">
+      <property name="text">
+       <string>38</string>
+      </property>
+     </item>
+     <item row="0" column="2">
+      <property name="text">
+       <string>39</string>
+      </property>
+     </item>
+     <item row="0" column="3">
+      <property name="text">
+       <string>40</string>
+      </property>
+     </item>
+     <item row="0" column="4">
+      <property name="text">
+       <string>41</string>
+      </property>
+     </item>
+     <item row="0" column="5">
+      <property name="text">
+       <string>42</string>
+      </property>
+     </item>
+     <item row="0" column="6">
+      <property name="text">
+       <string>43</string>
+      </property>
+     </item>
+     <item row="0" column="7">
+      <property name="text">
+       <string>44</string>
+      </property>
+     </item>
+     <item row="0" column="8">
+      <property name="text">
+       <string>45</string>
+      </property>
+     </item>
+     <item row="0" column="9">
+      <property name="text">
+       <string>46</string>
+      </property>
+     </item>
+     <item row="0" column="10">
+      <property name="text">
+       <string>47</string>
+      </property>
+     </item>
+     <item row="0" column="11">
+      <property name="text">
+       <string>48</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="7" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout_5">
+     <item>
+      <widget class="QLabel" name="label_8">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Ключ</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="3" column="0">
+    <widget class="QTableWidget" name="tableWidget_6">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>55</height>
+      </size>
+     </property>
+     <property name="sizeAdjustPolicy">
+      <enum>QAbstractScrollArea::AdjustToContents</enum>
+     </property>
+     <attribute name="horizontalHeaderDefaultSectionSize">
+      <number>29</number>
+     </attribute>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string>Ч</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Ш</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Щ</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Ъ</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Ы</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Ь</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Э</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Ю</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Я</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>а</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>б</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>в</string>
+      </property>
+     </column>
+     <item row="0" column="0">
+      <property name="text">
+       <string>25</string>
+      </property>
+     </item>
+     <item row="0" column="1">
+      <property name="text">
+       <string>26</string>
+      </property>
+     </item>
+     <item row="0" column="2">
+      <property name="text">
+       <string>27</string>
+      </property>
+     </item>
+     <item row="0" column="3">
+      <property name="text">
+       <string>28</string>
+      </property>
+     </item>
+     <item row="0" column="4">
+      <property name="text">
+       <string>29</string>
+      </property>
+     </item>
+     <item row="0" column="5">
+      <property name="text">
+       <string>30</string>
+      </property>
+     </item>
+     <item row="0" column="6">
+      <property name="text">
+       <string>31</string>
+      </property>
+     </item>
+     <item row="0" column="7">
+      <property name="text">
+       <string>32</string>
+      </property>
+     </item>
+     <item row="0" column="8">
+      <property name="text">
+       <string>33</string>
+      </property>
+     </item>
+     <item row="0" column="9">
+      <property name="text">
+       <string>34</string>
+      </property>
+     </item>
+     <item row="0" column="10">
+      <property name="text">
+       <string>35</string>
+      </property>
+     </item>
+     <item row="0" column="11">
+      <property name="text">
+       <string>36</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="5" column="0">
+    <widget class="QTableWidget" name="tableWidget_4">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>55</height>
+      </size>
+     </property>
+     <property name="sizeAdjustPolicy">
+      <enum>QAbstractScrollArea::AdjustToContents</enum>
+     </property>
+     <attribute name="horizontalHeaderDefaultSectionSize">
+      <number>29</number>
+     </attribute>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string>о</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>п</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>р</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>с</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>т</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>у</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>ф</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>х</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>ц</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>ч</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>ш</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>щ</string>
+      </property>
+     </column>
+     <item row="0" column="0">
+      <property name="text">
+       <string>49</string>
+      </property>
+     </item>
+     <item row="0" column="1">
+      <property name="text">
+       <string>50</string>
+      </property>
+     </item>
+     <item row="0" column="2">
+      <property name="text">
+       <string>51</string>
+      </property>
+     </item>
+     <item row="0" column="3">
+      <property name="text">
+       <string>52</string>
+      </property>
+     </item>
+     <item row="0" column="4">
+      <property name="text">
+       <string>53</string>
+      </property>
+     </item>
+     <item row="0" column="5">
+      <property name="text">
+       <string>54</string>
+      </property>
+     </item>
+     <item row="0" column="6">
+      <property name="text">
+       <string>55</string>
+      </property>
+     </item>
+     <item row="0" column="7">
+      <property name="text">
+       <string>56</string>
+      </property>
+     </item>
+     <item row="0" column="8">
+      <property name="text">
+       <string>57</string>
+      </property>
+     </item>
+     <item row="0" column="9">
+      <property name="text">
+       <string>58</string>
+      </property>
+     </item>
+     <item row="0" column="10">
+      <property name="text">
+       <string>59</string>
+      </property>
+     </item>
+     <item row="0" column="11">
+      <property name="text">
+       <string>60</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="6" column="0">
+    <widget class="QTableWidget" name="tableWidget_2">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>55</height>
+      </size>
+     </property>
+     <property name="sizeAdjustPolicy">
+      <enum>QAbstractScrollArea::AdjustToContents</enum>
+     </property>
+     <attribute name="horizontalHeaderDefaultSectionSize">
+      <number>29</number>
+     </attribute>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string>ъ</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>ы</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>ь</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>э</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>ю</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>я</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string/>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>.</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>:</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>!</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>?</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>,</string>
+      </property>
+     </column>
+     <item row="0" column="0">
+      <property name="text">
+       <string>61</string>
+      </property>
+     </item>
+     <item row="0" column="1">
+      <property name="text">
+       <string>62</string>
+      </property>
+     </item>
+     <item row="0" column="2">
+      <property name="text">
+       <string>63</string>
+      </property>
+     </item>
+     <item row="0" column="3">
+      <property name="text">
+       <string>64</string>
+      </property>
+     </item>
+     <item row="0" column="4">
+      <property name="text">
+       <string>65</string>
+      </property>
+     </item>
+     <item row="0" column="5">
+      <property name="text">
+       <string>66</string>
+      </property>
+     </item>
+     <item row="0" column="6">
+      <property name="text">
+       <string>67</string>
+      </property>
+     </item>
+     <item row="0" column="7">
+      <property name="text">
+       <string>68</string>
+      </property>
+     </item>
+     <item row="0" column="8">
+      <property name="text">
+       <string>69</string>
+      </property>
+     </item>
+     <item row="0" column="9">
+      <property name="text">
+       <string>70</string>
+      </property>
+     </item>
+     <item row="0" column="10">
+      <property name="text">
+       <string>71</string>
+      </property>
+     </item>
+     <item row="0" column="11">
+      <property name="text">
+       <string>72</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="8" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout_6">
+     <item>
+      <widget class="QTableWidget" name="keyTable">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>125</width>
+         <height>125</height>
+        </size>
+       </property>
+       <attribute name="horizontalHeaderDefaultSectionSize">
+        <number>30</number>
+       </attribute>
+       <attribute name="horizontalHeaderMinimumSectionSize">
+        <number>30</number>
+       </attribute>
+       <row>
+        <property name="text">
+         <string/>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string/>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string/>
+        </property>
+       </row>
+       <column>
+        <property name="text">
+         <string/>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string/>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string/>
+        </property>
+       </column>
+       <item row="0" column="0">
+        <property name="text">
+         <string>1</string>
+        </property>
+       </item>
+       <item row="0" column="1">
+        <property name="text">
+         <string>2</string>
+        </property>
+       </item>
+       <item row="0" column="2">
+        <property name="text">
+         <string>3</string>
+        </property>
+       </item>
+       <item row="1" column="0">
+        <property name="text">
+         <string>8</string>
+        </property>
+       </item>
+       <item row="1" column="1">
+        <property name="text">
+         <string>5</string>
+        </property>
+       </item>
+       <item row="1" column="2">
+        <property name="text">
+         <string>9</string>
+        </property>
+       </item>
+       <item row="2" column="0">
+        <property name="text">
+         <string>4</string>
+        </property>
+       </item>
+       <item row="2" column="1">
+        <property name="text">
+         <string>2</string>
+        </property>
+       </item>
+       <item row="2" column="2">
+        <property name="text">
+         <string>1</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="9" column="0">
+    <widget class="QPushButton" name="btnBack">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string>Назад</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
